@@ -10,6 +10,11 @@ import time
 import requests
 import socket
 from threading import Thread
+from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
+
+# --- Main Menu ---#
+btnTon = KeyboardButton('Top Charts')
+mainMenu = ReplyKeyboardMarkup(resize_keyboard=True).add(btnTon)
 
 bot = Bot(token="5159529265:AAF1LdOtGyXwto4WM_eMJYxzr5FXyHcKRuc")
 channel_id = '-1001783490331'
